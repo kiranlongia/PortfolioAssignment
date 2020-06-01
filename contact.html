@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- This is the website created by ...... -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/content.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- this area is for the logo -->
+      <header>
+        <h1>  </h1>
+        <h3>My Portfolio</h3>
+               
+            </header> 
+            
+
+      <!-- this area is for the hyperlinks to other pages -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+
+        </ul>
+      </nav>
+
+      <!-- main content of the website -->
+      <main>
+      
+          <h2 >You can contact me at:</h2>
+          <p>
+            My Home Address is: <br />
+            3370 Jolliffe Avenue <br />
+            Mississauga, L4T 1V7
+          </p><br>
+          
+          <p>Phone Number:</p>
+          
+          <p>
+            <a class="mobile" href="tel:4377745037"><u><i>(437) 774-5037</i></u> </a
+            ><span class="desktop">(437) 774-5037</span>
+          </p>
+          
+          <p>
+            Email Address:
+          </p>
+          <p>
+            <a href="mailto:kiranlongia912@gmail.com" class="contact"
+              ><u>kiranlongia912@gmail.com</u></a >
+          </p>
+
+        <div class="desktop">
+        <div class="column" >
+          <h2>Want to ask any question? Send Message</h2>
+          <p>Click on the button at the bottom of this page to open the chat form.
+          &nbsp;&nbsp;<div class="triangle-down"></div></p>
+          <button class="open-button" onclick="openForm()">Chat</button>
+          
+          <div class="chat-popup" id="myForm">
+          <form action="contact.html" class="form-container">
+          <h1>Chat</h1>
+          
+          <label for="msg"><b>Message</b></label>
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+          
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+          </div>
+          </div>
+          <script>
+          function openForm() {
+          document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+          
+          
+          
+        </div></main>
+        <footer>
+    
+          <div class="centerdiv">
+              <a href="https://www.facebook.com/kirandeepkaur912"><img src="images/facebookicon.png" height="50em" width="50em" />
+               
+              </a>
+  
+              <a href="http://www.instagram.com/kiran7523"><img src="images/insta.jpg" height="50em" width="50em" />
+               
+              </a>
+              
+               
+              </a>     
+          </a>
+           <p> Copyright 2020. All Rights Reserved.</p>
+          </div>
+      </footer>
+       
+    </div>
+  </body>
+</html>
